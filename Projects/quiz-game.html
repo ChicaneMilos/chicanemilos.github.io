@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles-quiz.css">
+    <header>
+        <div class="header-div"></div>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html" class="logoLink"><img src="../global-img/logo.png" alt="Logo"></a>
+                </div>
+                <div class="header-buttons">
+                    <a href="../index.html">Homepage</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="left-column">
+            <div class="slideshow-container">
+                <div class="slides">
+                    <img src="quiz/Screenshot 2024-07-17 145607.png" alt="Game Overview" class="active">
+                    <img src="quiz/Screenshot 2024-07-17 144930.png" alt="Quiz Selector">
+                    <img src="quiz/Screenshot 2024-07-17 145046.png" alt="Quiz Creator - Add Question">
+                    <img src="quiz/Screenshot 2024-07-17 145457.png" alt="Quiz Creator - Question Overview">
+                    <img src="quiz/Screenshot 2024-07-17 145752.png" alt="Quiz Gameplay">
+                    <img src="quiz/Screenshot 2024-07-17 145914.png" alt="Quiz Completed Message">
+                    
+
+                </div>
+                <div class="slideshow-buttons">
+                    <button onclick="changeSlide(-1)">&#10094;</button>
+                    <button onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="github-link">
+                <a href="https://github.com/ChicaneMilos/quiz-game" target="_blank">See More On GitHub</a>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="text-container">
+                <header>
+                    <h1>QuizGame</h1>
+                </header>
+            
+                <section id="intro">
+                    <p><strong>QuizGame</strong> is a codename for a Unity-based quiz game, currently in development, designed to provide an engaging and educational experience. This game is actively <strong>used by</strong> the <strong>Academy of Applied Technical and Preschool Studies</strong>, a <strong>college</strong> in Niš, Serbia, during <strong>promotional events</strong> to showcase the institution in an interactive manner using <strong>VR technology</strong> and testing participants' knowledge through quizzes.</p>
+                </section>
+            
+                <nav>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#future-development">Future Development</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </nav>
+            
+                <section id="features">
+                    <h2>Features</h2>
+                    <ul>
+                        <li><strong>Quiz Creation:</strong> Allows the creation of multiple quizzes and the addition of questions, each with up to 4 possible answers, with one correct answer.</li>
+                        <li><strong>Immersive Gameplay:</strong> Players navigate through a series of platforms where questions are displayed on the walls and answers on the doors. They must choose the correct door to proceed, creating an interactive and challenging experience.</li>
+                        <li><strong>Failure and Success Feedback:</strong> Incorrect answers result in a failure message with the time taken displayed, and an option to restart the quiz. Successful completion shows a success message along with the quiz time duration.</li>
+                        <li><strong>Easy Import and Export:</strong> Quizzes can be easily imported and exported in JSON format, simplifying the process of sharing and managing quiz data.</li>
+                    </ul>
+                </section>
+            
+                <section id="future-development">
+                    <h2>Future Development</h2>
+                    <ul>
+                        <li><strong>Maze Concept:</strong> Transitioning from platforms to a maze format, creating a mystical atmosphere with LED designs. The maze will provide a more immersive and challenging experience.</li>
+                        <li><strong>Score Percentage:</strong> Player performance will be calculated as a percentage, determining the reward received. For example, achieving a high percentage of correct answers will yield the best rewards, while lower percentages will offer lesser rewards.</li>
+                        <li><strong>VR Compatibility:</strong> The game will be fully playable in both VR and non-VR modes, enhancing the immersive experience.</li>
+                        <li><strong>Customization:</strong>
+                            <ul>
+                                <li><strong>Time Limit:</strong> Customizable time limits for completing quizzes.</li>
+                                <li><strong>Ad Banners:</strong> Quiz creators can customize ad banners within the maze, adding images to be displayed on the maze walls.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Project Status:</strong> The project is currently in its early stages and is expected to be completed by the end of August 2024. Stay tuned for development updates and new features.</li>
+                    </ul>
+                </section>
+            
+                <section id="installation">
+                    <h2>Installation</h2>
+                    <ol>
+                        <li><strong>Clone the repository:</strong>
+                            <pre><code>git clone https://github.com/ChicaneMilos/quiz-game.git</code></pre>
+                        </li>
+                        <li><strong>Add project to Unity Hub:</strong>
+                            <ul>
+                                <li><p>Recommended Unity version to open the project is <strong>Unity 2022.3.25f1</strong>.</p></li>
+                                <li><p>Open Unity Hub, click on the "Add" button, and select the cloned project folder.</p></li>
+                            </ul>
+                        </li>
+                        <li><strong>Open the project in Unity:</strong>
+                            <ul>
+                                <li><p>Once the project is listed in the Unity Hub, you are ready to go and test the game!</p></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+            
+                <section id="contact">
+                    <h2>Contact</h2>
+                    <p>If you have any questions, feedback, or inquiries, please feel free to reach out to me at:</p>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:jokic.milos@outlook.com">jokic.milos@outlook.com</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Miloš Jokić (devmilos)</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slides img');
+        const slideshowContainer = document.querySelector('.slideshow-container');
+
+        function changeSlide(n) {
+            slides[slideIndex].classList.remove('active');
+            slideIndex = (slideIndex + n + slides.length) % slides.length;
+            slides[slideIndex].classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            slides[slideIndex].classList.add('active');
+        });
+    </script>
+</body>
+
+</html>

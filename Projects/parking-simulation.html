@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles-parking.css">
+    <header>
+        <div class="header-div"></div>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html" class="logoLink"><img src="../global-img/logo.png" alt="Logo"></a>
+                </div>
+                <div class="header-buttons">
+                    <a href="../index.html">Homepage</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="left-column">
+            <div class="slideshow-container">
+                <div class="slides">
+                    <img src="parking/Screenshot 2024-07-17 195447.png" alt="Project Overview" class="active">
+                    <img src="parking/Screenshot 2024-07-17 195636.png" alt="Vehicle Status">
+                    <img src="parking/Screenshot 2024-07-17 195705.png" alt="Edit Vehicle">
+                    <img src="parking/Screenshot 2024-07-17 195827.png" alt="Vehicle Unparked">
+                    <img src="parking/Screenshot 2024-07-17 195519.png" alt="Garage Manager">
+                    <img src="parking/Screenshot 2024-07-17 195007.png" alt="Login Screen">
+                    <img src="parking/Screenshot 2024-07-17 195300.png" alt="Register Screen">
+                    <img src="parking/Screenshot 2024-07-17 205542.png" alt="Add Vehicle">
+                    
+
+                </div>
+                <div class="slideshow-buttons">
+                    <button onclick="changeSlide(-1)">&#10094;</button>
+                    <button onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="github-link">
+                <a href="https://github.com/ChicaneMilos/parking-simulation/" target="_blank">See More On GitHub</a>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="text-container">
+                <header>
+                    <h1>Parking Simulation</h1>
+                </header>
+    <p>The Parking Simulation project is a comprehensive application developed entirely using JavaScript, with backend support implemented twice using different technologies: Python and .NET (ASP.NET). The application simulates a parking environment where users can manage vehicle data within parking spots, tracking various attributes and calculating parking fees based on duration.</p>
+
+    <nav>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#backend-technologies">Backend Technologies</a>
+                <ul>
+                    <li><a href="#javascript-with-python-mysql">JavaScript with Python (MySQL)</a></li>
+                    <li><a href="#javascript-with-net-aspnet-sql-server">JavaScript with .NET (ASP.NET, SQL Server)</a></li>
+                </ul>
+            </li>
+            <li><a href="#installation">Installation</a>
+                <ul>
+                    <li><a href="#javascript-with-python">JavaScript with Python</a></li>
+                    <li><a href="#javascript-with-net">JavaScript with .NET</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Vehicle Data Management</strong> - Users can input and manage details of vehicles including color, brand, model, and registration number.</li>
+            <li><strong>Parking Duration Tracking</strong> - The application tracks the total time each vehicle remains parked.</li>
+            <li><strong>CRUD Operations</strong> - Users can add, update, and delete vehicle entries.</li>
+            <li><strong>Parking Fee Calculation</strong> - The first 3 hours of parking are free. Beyond that, the application calculates the total parking fee based on the number of hours parked and the hourly rate.</li>
+            <li><strong>Parking System</strong> - The application includes a parking system that manages check-ins and check-outs of vehicles.</li>
+            <li><strong>Multi-Level Parking</strong> - Users can park vehicles on different levels of the garage. It is also possible to add or remove levels within the garage as needed.</li>
+            <li><strong>User Registration and Login</strong> - Users can register and log in to the application.</li>
+            <li><strong>Role-Based Access Control</strong>:
+                <ul>
+                    <li><strong>Guest</strong> - Can view parked vehicles.</li>
+                    <li><strong>User</strong> - Can add and manipulate their own vehicles.</li>
+                    <li><strong>Admin</strong> - Can manipulate any vehicle and manage garage levels.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="backend-technologies">
+        <h2>Backend Technologies</h2>
+        <section id="javascript-with-python-mysql">
+            <h3>JavaScript with Python (MySQL)</h3>
+            <ul>
+                <li><strong>Database Communication</strong> - Uses Python to communicate with a MySQL database.</li>
+                <li><strong>Data Handling</strong> - Python scripts handle backend processes, ensuring smooth interaction with the database for storing and retrieving vehicle data.</li>
+            </ul>
+        </section>
+        <section id="javascript-with-net-aspnet-sql-server">
+            <h3>JavaScript with .NET (ASP.NET, SQL Server)</h3>
+            <ul>
+                <li><strong>Database Communication</strong> - Utilizes ASP.NET with a SQL Server database specifically designed for this application.</li>
+                <li><strong>Web Application Framework</strong> - Provides a robust framework for managing backend operations and seamless interaction with the frontend.</li>
+                <li><strong>Technology Stack</strong> - Developed using .NET, ASP.NET, and C# to ensure high performance and reliability.</li>
+            </ul>
+        </section>
+    </section>
+
+    <section id="installation">
+        <h2>Installation</h2>
+        <p>To install and run this project locally, follow these steps:</p>
+
+        <section id="prerequisites">
+            <h3>Prerequisites</h3>
+            <ul>
+                <li><strong>Visual Studio Code & Live Server Extension</strong></li>
+                <li><strong>Python 3.11</strong> (recommended version) - For JavaScript with Python</li>
+                <li><strong>MySQL Server</strong> - For JavaScript with Python</li>
+                <li><strong>MySQL Workbench or phpMyAdmin</strong> - For JavaScript with Python</li>
+                <li><strong>.NET 8.0 SDK</strong> - For JavaScript with .NET</li>
+                <li><strong>MS SQL Server</strong> - For JavaScript with .NET</li>
+                <li><strong>SQL Server Management Studio (SSMS)</strong> - For JavaScript with .NET</li>
+                <li><strong>Visual Studio 2022</strong> (or any version that supports .NET 8.0) - For JavaScript with .NET</li>
+            </ul>
+        </section>
+
+        <section id="javascript-with-python">
+            <h3>JavaScript with Python</h3>
+            <ol>
+                <li><strong>Clone the repository from GitHub:</strong>
+                    <pre><code>git clone https://github.com/ChicaneMilos/parking-simulation.git</code></pre>
+                </li>
+                <li><strong>Import the database:</strong>
+                    <ul>
+                        <li>Open MySQL Workbench or phpMyAdmin.</li>
+                        <li>Create a new database.</li>
+                        <li>Import the <code>garaza.sql</code> file located in the repository into the new database.</li>
+                    </ul>
+                </li>
+                <li><strong>Run the Python server:</strong>
+                    <pre><code>python app.py</code></pre>
+                </li>
+                <li><strong>Run the web app:</strong>
+                    <ul>
+                        <li>Open Visual Studio Code.</li>
+                        <li>Open the JavaScript folder located in the repository.</li>
+                        <li>Start live server.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section id="javascript-with-net">
+            <h3>JavaScript with .NET</h3>
+            <ol>
+                <li><strong>Clone the repository from GitHub:</strong>
+                    <pre><code>git clone https://github.com/ChicaneMilos/parking-simulation.git</code></pre>
+                </li>
+                <li><strong>Import the database:</strong>
+                    <ul>
+                        <li>Open SQL Server Management Studio (SSMS).</li>
+                        <li>Connect to your SQL Server instance.</li>
+                        <li>Right-click on the Databases node and select <strong>Restore Database...</strong></li>
+                        <li>Select the <strong>Device</strong> option and choose the backup file (<code>garaza.bak</code>) located in the repository.</li>
+                        <li>Follow the prompts to restore the database.</li>
+                    </ul>
+                </li>
+                <li><strong>Run the .NET server:</strong>
+                    <ul>
+                        <li>Open Visual Studio 2022.</li>
+                        <li>Open the solution file (<code>.sln</code>) located in the repository.</li>
+                        <li>Ensure the database connection string in <code>appsettings.json</code> is correctly configured to point to your SQL Server instance.</li>
+                        <li>Build and run the project.</li>
+                    </ul>
+                </li>
+                <li><strong>Run the web app:</strong>
+                    <ul>
+                        <li>Open Visual Studio Code.</li>
+                        <li>Open the JavaScript folder located in the repository.</li>
+                        <li>Start Live Server.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions, feedback, or inquiries, please feel free to reach out to me at:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:jokic.milos@outlook.com">jokic.milos@outlook.com</a></li>
+        </ul>
+    </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Miloš Jokić (devmilos)</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slides img');
+        const slideshowContainer = document.querySelector('.slideshow-container');
+
+        function changeSlide(n) {
+            slides[slideIndex].classList.remove('active');
+            slideIndex = (slideIndex + n + slides.length) % slides.length;
+            slides[slideIndex].classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            slides[slideIndex].classList.add('active');
+        });
+    </script>
+</body>
+
+</html>

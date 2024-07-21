@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles-classroom.css">
+    <header>
+        <div class="header-div"></div>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html" class="logoLink"><img src="../global-img/logo.png" alt="Logo"></a>
+                </div>
+                <div class="header-buttons">
+                    <a href="../index.html">Homepage</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="left-column">
+            <div class="slideshow-container">
+                <div class="slides">
+                    <img src="classroom/Screenshot 2024-07-18 194742.png" alt="Photo 5" class="active">
+                    <img src="classroom/Screenshot 2024-07-18 194338.png" alt="Photo 1">
+
+                    <img src="classroom/Screenshot 2024-07-18 194848.png" alt="Photo 7">
+                    <img src="classroom/Screenshot 2024-07-18 194918.png" alt="Photo 8">
+                    <img src="classroom/Screenshot 2024-07-18 194945.png" alt="Photo 9">
+                    <img src="classroom/Screenshot 2024-07-18 195009.png" alt="Photo 10">
+                    <img src="classroom/Screenshot 2024-07-18 195107.png" alt="Photo 11">
+
+
+
+
+                    <img src="classroom/Screenshot 2024-07-18 194414.png" alt="Photo 2">
+                    <img src="classroom/Screenshot 2024-07-18 194711.png" alt="Photo 4">
+                    <img src="classroom/Screenshot 2024-07-18 194639.png" alt="Photo 3">
+
+
+
+
+                    <img src="classroom/Screenshot 2024-07-18 194808.png" alt="Photo 6">
+
+                </div>
+                <div class="slideshow-buttons">
+                    <button onclick="changeSlide(-1)">&#10094;</button>
+                    <button onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="github-link">
+                <a href="https://github.com/ChicaneMilos/classroom-scheduler" target="_blank">See More On GitHub</a>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="text-container">
+                <header>
+                    <h1>Classroom Scheduler</h1>
+                </header>
+
+
+                <p><strong>Classroom Scheduler</strong> is a sophisticated application developed for the <strong>Academy
+                        of Applied Technical and Preschool Studies in Niš, Serbia</strong>, designed to assist faculty
+                    members with organizing and reserving classrooms and amphitheaters for lectures and exams. This
+                    project streamlines the scheduling process, allowing for efficient and flexible use of academic
+                    spaces.</p>
+
+                <p><strong>Disclaimer</strong>: This project is a <strong>demo version</strong> and does not include all
+                    functionalities of the full application. Certain parts of the code, particularly those involving the
+                    <strong>Azure</strong> backend, have been omitted to protect the privacy and security of the data
+                    used by the Academy of Applied Technical and Preschool Studies. The included <strong>HTML,
+                        JavaScript, and ASP.NET</strong> code provides a <strong>partial view</strong> of the project’s
+                    capabilities.</p>
+
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#technology-stack">Technology Stack</a></li>
+                    <li><a href="#installation">Installation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+
+                <h2 id="features">Features</h2>
+                <ul>
+                    <li><strong>Lecture Scheduling</strong> - Professors can schedule lectures, specifying the subject,
+                        study program, date, time, and classroom or amphitheatre.</li>
+                    <li><strong>Exam Scheduling</strong> - Professors can schedule exams with the same options as
+                        lectures, plus a graphical interface to organize seating arrangements.</li>
+                    <li><strong>Seating Arrangement</strong> - The application allows professors to graphically draw a
+                        seating map for exams, ensuring efficient use of space and organization.</li>
+                    <li><strong>Multi-purpose Classroom Usage</strong> - Enables the same classroom or amphitheatre to
+                        be used for different exams simultaneously for different study programs.</li>
+                    <li><strong>Custom Classroom Management</strong> - Admins can add, edit, or delete classrooms and
+                        amphitheatres as needed.</li>
+                    <li><strong>Calendar Integration</strong> - Allows selecting any date from the calendar to schedule
+                        or edit academic activities.</li>
+                    <li><strong>CRUD Operations</strong> - Professors and assistants can add, update, and delete
+                        scheduled activities.</li>
+                    <li><strong>User Roles</strong>
+                        <ul>
+                            <li><strong>Guest</strong> - Can view the schedule for all classrooms and amphitheatres for
+                                any day.</li>
+                            <li><strong>Professor/Assistant</strong> - Can add, edit, and delete lectures and exams for
+                                any day.</li>
+                            <li><strong>Admin</strong> - Can manage classrooms and amphitheatres, including adding,
+                                editing, and deleting them.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 id="technology-stack">Technology Stack</h2>
+                <p>The application is developed using a combination of technologies for the frontend and backend, and is
+                    hosted on Azure.</p>
+                <h3>Frontend</h3>
+                <ul>
+                    <li><strong>HTML</strong> - For structuring the web pages.</li>
+                    <li><strong>JavaScript</strong> - For adding interactivity and functionality to the web pages.</li>
+                </ul>
+                <h3>Backend</h3>
+                <ul>
+                    <li><strong>.NET (ASP.NET, C#)</strong> - For implementing the server-side logic and handling
+                        requests.</li>
+                </ul>
+                <h3>Database</h3>
+                <ul>
+                    <li><strong>Azure</strong> - Provides robust and scalable data management.</li>
+                </ul>
+                <h3>Server</h3>
+                <ul>
+                    <li><strong>Azure</strong> - Ensures high availability and performance.</li>
+                </ul>
+
+                <h2 id="installation">Installation</h2>
+                <p>To install and view code or run this <strong>demo project</strong> locally, follow these steps:</p>
+
+                <h3>Prerequisites</h3>
+                <ul>
+                    <li><strong>Visual Studio Code & Live Server Extension</strong></li>
+                    <li><strong>.NET 8.0 SDK</strong></li>
+                    <li><strong>Visual Studio 2022</strong> (or any version that supports .NET 8.0)</li>
+                </ul>
+
+                <h3>Setup</h3>
+                <ol>
+                    <li><strong>Clone the repository from GitHub:</strong>
+                        <pre><code>git clone https://github.com/ChicaneMilos/parking-simulation.git</code></pre>
+                    </li>
+                    <li><strong>Open the web app project:</strong>
+                        <ul>
+                            <li>Open Visual Studio Code.</li>
+                            <li>Open the JavaScript folder located in the repository.</li>
+                            <li>You are all set. View the code or start the live server to run it.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Open the ASP.NET project:</strong>
+                        <ul>
+                            <li>Open Visual Studio 2022.</li>
+                            <li>Open the solution file (<code>.sln</code>) located in the repository.</li>
+                            <li>You are all set. View the code or build and run the project to start the server.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h2 id="contact">Contact</h2>
+                <p>If you have any questions, feedback, or inquiries, please feel free to reach out to me at:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:jokic.milos@outlook.com">jokic.milos@outlook.com</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Miloš Jokić (devmilos)</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slides img');
+        const slideshowContainer = document.querySelector('.slideshow-container');
+
+        function changeSlide(n) {
+            slides[slideIndex].classList.remove('active');
+            slideIndex = (slideIndex + n + slides.length) % slides.length;
+            slides[slideIndex].classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            slides[slideIndex].classList.add('active');
+        });
+    </script>
+</body>
+
+</html>
